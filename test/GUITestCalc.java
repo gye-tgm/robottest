@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import ye.Controller;
+import ye.Controler;
 import ye.TRExtrem;
 
 /**
@@ -20,7 +20,7 @@ public class GUITestCalc {
 	private final int TEST_DELAY = 50; // die Wartezeit beim Reinitialisieren der zu testenden GUI
 	
 	private MyRobot r;
-	private Controller c;
+	private Controler c;
 	private TRExtrem frame;
 
 	@Before
@@ -28,7 +28,7 @@ public class GUITestCalc {
 		Thread.sleep(TEST_DELAY);
 		
 		frame = new TRExtrem();
-		c = new Controller(frame);
+		c = new Controler(frame);
 		
 		r = new MyRobot();
 		r.setAutoDelay(ROBOT_DELAY); // der Robot wartet nach jeder Aktion automatisch ROBOT_DELAY Sekunden
